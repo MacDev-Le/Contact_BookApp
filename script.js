@@ -12,7 +12,7 @@ function checkApiKey() {
         // Show contacts (Show page)
         showContacts();
         // Get contacts (API call)
-        getContacts()
+        getContacts();
     }
 }
 
@@ -64,13 +64,13 @@ function showContacts() {
     showPage('contactsPage');
 }
 
-function showAddContacts() {
+function showAddContact() {
     showPage('addContactsPage');
     // Clear the form.
     document.getElementById('addContactForm').reset();
 }
 
-function showEditContacts() {
+function showEditContact() {
     showPage('editContactPage');
 
     // Load contact data for editing.
