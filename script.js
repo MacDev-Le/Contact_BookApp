@@ -29,6 +29,7 @@ function setApiKey() {
     // Validate the API Key first.
     // Example: 'https://mysite.itvarsity.org/api/ContactBook/ "+" controller/api-key/?apiKey + "lerato.nkhatho@gmail.com"
     // Drives the whole API key validation
+    // CHANGE: Fixed API key validation endpoint and parameter name (was "apikey", now "apiKey")
 
     fetch(rootPath + "controller/api-key/?apiKey=" + inputApiKey)
         .then(function (response) {
